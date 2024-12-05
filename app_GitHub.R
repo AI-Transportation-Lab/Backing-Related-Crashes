@@ -9,7 +9,7 @@ mapbox_token <- Sys.getenv("MAPBOX_API_KEY")
 googleMapsKey <- Sys.getenv("GOOGLEMAPS_API_KEY")
 
 # Load the new data correctly.
-data <- fread("0_Rohit_data/0_data.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
+data <- fread("0_data/0_data.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
 
 # Ensure Latitude and Longitude are numeric.
 data$latitude <- as.numeric(data$latitude)
